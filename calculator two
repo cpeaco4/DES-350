@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<style>
+	
+	body{margin:0px;
+	background-color:black;
+	}
+	
+	.textRow {
+		font-family: 'Roboto', sans-serif;
+		color: white
+	}
+	
+	#display {
+	    position: fixed;
+		right: 400px;
+	}
+	
+	
+	#myCalculator{
+		margin-left: calc(50% - 200px)     
+		} 
+	
+	.number {
+		font-family: 'Bodoni Moda', serif;
+  background-color: #white;
+  border: none;
+  color: black;
+  padding: 20px 34px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+	.operator {
+		
+		background-color: black;
+  		border: none;
+ 		color: white;
+  		padding: 56px 34px;
+  		text-align: right;
+  		text-decoration: none;
+ 		 font-size: 16px;
+			
+	}
+	
+	
+	.operator2 {
+		font-family: 'Roboto', sans-serif;
+ 		 background-color: mediumaquamarine;
+  		border: none;
+  		color: black;
+  		padding: 40px 34px;
+  		text-align: right;
+  		text-decoration: none;
+  		font-size: 16px;
+		
+	}
+	
+	.inputRow {
+		right: 50px;
+		
+	}
+
+
+</style>
+	
+	
+<title>calculator</title>
+</head>
+
+<body>
+
+		  
+	<form name="calculator">
+	
+	<div id="myCalculator"> 
+		
+		<div id="top_display">
+			
+		<input type="text" name="display" id="display">
+		</div>
+		
+		<div class="inputRow first_buttonA">
+		 <input type="button" class="operator2" name="add" value="+"	
+		onclick="calculator.display.value += '+'">
+		</div>
+		
+		<input type="button" class="operator2" name="multiply" value="x"	
+		onclick="calculator.display.value += '*'">
+		
+		<div class="inputRow first_buttonB">
+		<input type="button" class="operator2" name="subtract" value="-"	
+		onclick="calculator.display.value += '/'">
+		
+		<input type="button" class="operator2" name="divide" value="/"	
+		onclick="calculator.display.value += '/'">	
+		</div>
+		</div>
+		
+		<div class="inputRow first_button">
+			
+		<input type="button" class="operator2" name="clear" value="C"	
+		onclick="calculator.display.value=''"> 
+			
+		<input type="button" class="operator2" name="equals" value="="	
+		onclick="calculator.display.value
+		=eval(calculator.display.value)"> 
+		</div>
+	
+
+		<div class="textRow">
+			This site is a calculator
+			 </div>
+		
+		<div class="inputRow">
+			
+		<div class="row1">
+			
+			<div class="inputfield"><input type="button" class="number" value="0"
+			   onclick="calculator.display.value +='0'"></div>
+			
+			</div>
+			
+			</div>
+			
+		<div class="inputRow">
+		
+			<div class="row2"> 
+				
+		<div class="inputfield"></div><input type="button" class="number" value="1"
+			   onclick="calculator.display.value +='1'">
+			
+			<input type="button" class="number" value="2"
+			   onclick="calculator.display.value +='2'">
+			
+			<input type="button" class="number" value="3"
+			   onclick="calculator.display.value +='3'">
+				</div>
+			
+			<div class="row3"> 
+			
+		<input type="button" class="number" value="4"
+			   onclick="calculator.display.value +='4'">
+			
+			<input type="button" class="number" value="5"
+			   onclick="calculator.display.value +='5'">
+
+			 <input type="button" class="number" value="6"
+			   onclick="calculator.display.value +='6'"> 
+			</div>
+			
+			<div class="row4"> 
+			
+		<input type="button" class="number" value="7"
+			   onclick="calculator.display.value +='7'">
+			
+			<input type="button" class="number" value="8"
+			   onclick="calculator.display.value +='8'">
+			
+			<input type="button" class="number" value="9"
+			   onclick="calculator.display.value +='9'"> 
+			</div>
+			
+			</div>
+		
+	
+		 </form>
+</body>
+</html>
+
+
+
